@@ -10,7 +10,7 @@ const authApi = axios.create({
   headers: {
     'Content-Type': 'application/json'
   },
-  withCredentials: true
+  withCredentials: false // Changed to false since we're handling the token manually
 });
 
 // Register a new user
